@@ -1,8 +1,26 @@
-yolo
-====
+# yolo
 
-A git alias
+`yolo`, a git alias.
 
+## the alias
+
+The alias runs this command:
+
+```sh
+git add -A && \
+  git commit -am "`curl -s http://whatthecommit.com/index.txt `" && \
+  git push -f origin master
 ```
-git config --global alias.yolo \!"git add -A && git commit -am \"\`curl -s http://whatthecommit.com/index.txt \`\" && git push -f origin master"
+
+## installation
+
+```sh
+curl -L https://raw.githubusercontent.com/atongen/yolo/master/install.sh | sudo bash
 ```
+
+## contributing
+
+* install as described in the previous step
+* fork & clone the repo
+* make your changes
+* `git yolo`
