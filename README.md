@@ -8,14 +8,14 @@ The alias runs this command:
 
 ```sh
 git add -A && \
-  git commit -am "`curl -s http://whatthecommit.com/index.txt `" && \
+  git commit -am "`curl -sL https://whatthecommit.com/index.txt`" && \
   git push -f origin master
 ```
 
 ## installation
 
 ```sh
-curl -L https://raw.githubusercontent.com/atongen/yolo/master/install.sh | sudo bash
+curl -L https://raw.githubusercontent.com/atongen/yolo/main/install.sh | sudo bash
 ```
 
 ## contributing
